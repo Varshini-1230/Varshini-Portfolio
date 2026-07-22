@@ -968,14 +968,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Contact Section */
 .contact-grid {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 3rem;
-}
-
-.contact-info-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 .contact-card {
@@ -1009,45 +1005,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-primary);
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.form-label {
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-}
-
-.form-control {
-  background: var(--bg-tertiary);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-sm);
-  padding: 0.85rem 1rem;
-  color: var(--text-primary);
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  transition: border-color var(--transition-fast);
-}
-
-.form-control:focus {
-  outline: none;
-  border-color: var(--accent-primary);
-}
-
-textarea.form-control {
-  resize: vertical;
-  min-height: 120px;
 }
 
 /* Modal Styling */

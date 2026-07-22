@@ -368,15 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Contact Form Submission Handler
-  const contactForm = document.getElementById('contactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      showToast('Thank you! Your message has been sent successfully.');
-      contactForm.reset();
-    });
-  }
+
 
 
 });
